@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/style.css">
+
+	<!--Сonnecting Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+
+	<title>Simple-portfolio</title>
+	<script src="JS/main.js" defer></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<button class="Btn-Change_theme">
+				<div>
+					<img src="img/Btn-Change_theme.png">
+				</div>
+			</button>
+		</header>
+
+		<main>
+			<div class="Profile">
+				<div class="Profile-info">
+					<div class="Profile-info__img">
+						<div class="Profile-info__img___border">
+							<img src="img/Profile-img.png">
+						</div>
+					</div>
+					<div class="Profile-info__info">
+						<h1>Victor Alvarado</h1>
+						<h3>Software Engineer</h3>
+						<div class="Social-Network">
+							<a href="#">
+								<img src="img/github.png"></img>
+							</a>
+							<a href="#">
+								<img src="img/twitter.png"></img>
+							</a>
+							<a href="#">
+								<img src="img/linkedin.png"></img>
+							</a>
+							<a href="#">
+								<img src="img/youtube.png"></img>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Profile-facts">
+					<div class="Profile-facts__items">
+						<h4>7</h4>
+						<p>Years of work <br> experience</p>
+					</div>
+					<div class="Profile-facts__items">
+						<h4>50+</h4>
+						<p>Completed <br> projects</p>
+					</div>
+					<div class="Profile-facts__items">
+						<h4>20+</h4>
+						<p>Satisfied <br> customers</p>
+					</div>
+				</div>
+				<div class="Profile-btn">
+					<button><b>Download CV </b><img src="img/arrow-dwl.png"></button>
+					<button><b>Contact me</b></button>
+				</div>
+			</div>
+
+			<div class="Tabs">
+				<div class="Tabs-buttons">
+					<div class="Tabs-buttons__items">
+						<input type="checkbox" id="input-l">
+						<button onclick="btn_l()" id="btn-l">Portfolio</Button>
+					</div>
+					<div class="Tabs-buttons__items">
+						<input type="checkbox" id="input-r">
+						<button onclick="btn_r()" id="btn-r">Skills</button>
+					</div>
+				</div>
+
+				<div class="Tabs-content">
+
+					<div class="Tabs-content__portfolio" id="portfolio">
+						<div class="cart-img">
+							<img class="cart-img__img mask-grey_portf" src="img/portfolio-carts/cart1.png">
+							<div class="mask-text mask-portfolio">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img mask-grey_portf" src="img/portfolio-carts/cart2.png">
+							<div class="mask-text mask-portfolio">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img mask-grey_portf" src="img/portfolio-carts/cart3.png">
+							<div class="mask-text mask-portfolio">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img mask-grey_portf" src="img/portfolio-carts/cart4.png">
+							<div class="mask-text mask-portfolio">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img mask-grey_portf" src="img/portfolio-carts/cart5.png">
+							<div class="mask-text mask-portfolio">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img mask-grey_portf" src="img/portfolio-carts/cart6.png">
+							<div class="mask-text mask-portfolio">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="Tabs-content__skills" id="skills">
+						<div class="cart-img">
+							<img class="cart-img__img" src="img/skills-carts/cart1.png">
+							<div class="mask-text mask-skills">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img" src="img/skills-carts/cart2.png">
+							<div class="mask-text mask-skills">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img" src="img/skills-carts/cart3.png">
+							<div class="mask-text mask-skills">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img" src="img/skills-carts/cart4.png">
+							<div class="mask-text mask-skills">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img" src="img/skills-carts/cart5.png">
+							<div class="mask-text mask-skills">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-img">
+							<img class="cart-img__img" src="img/skills-carts/cart6.png">
+							<div class="mask-text mask-skills">
+								<div class="mask-text__item">
+									<h1>SmarterTrading411</h1>
+									<p>Landing page of SmarterTrading411 created
+										using wordPress</p>
+										<a class="mask-text__link" href="#">
+											<img src="img/Link.png">
+										</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>© Victor Alvarado. 2022 All rigths reserved</p>
+		</footer>
+	</div>
+</body>
+
+</html>
