@@ -30,6 +30,11 @@ body{
 	color: var(--color-h3);
 	display: flex;
 	justify-content: center;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: bold;
+	line-height: 33px;
 }
 .wrap{
 	display: flex;
@@ -43,12 +48,7 @@ header{
 footer{
 	color: var(--color-h3);
 	margin: 80px 0;
-
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: bold;
 	font-size: 22px;
-	line-height: 33px;
 }
 /** btn toggle-them style */
 #BtnToggleTheme{
@@ -102,20 +102,13 @@ footer{
 	margin-left: 40px;
 }
 .Profile-info__info h1{
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: bold;
 	font-size: 46px;
 	line-height: 69px;
 	color: var(--color-h1);
 	margin: 0;
 }
 .Profile-info__info h3{
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: bold;
 	font-size: 22px;
-	line-height: 33px;
 	color: var(--color-h3);
 	margin: 0;
 }
@@ -143,19 +136,12 @@ footer{
 }
 .Profile-facts__items h1{
 	margin: 0;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: bold;
 	font-size: 24px;
 	line-height: 36px;
 	color: var(--fact-h1);
 }
 .Profile-facts__items h3{
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: bold;
 	font-size: 22px;
-	line-height: 33px;
 	text-align: center;
 	color: var(--fact-h3);
 }
@@ -172,19 +158,13 @@ footer{
 	height: 80px;
 	border: none;
 	border-radius: 10px;
-
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: bold;
 	font-size: 22px;
-	line-height: 33px;
 	background-color: #FFE071;
 	color: #3D3D3D;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: 0.3s ease 0s;
 }
 .Profile-btn button:hover{
 	background-color: #B8A252;
@@ -199,11 +179,8 @@ footer{
 	background-color: var(--btn-hov);
 }
 
-
 /** Tabs style */
-input{
-	display: none;
-}
+input{display: none;}
 .Tabs-buttons{
 	background-color: var(--btn-bg);
 	display: flex;
@@ -220,20 +197,11 @@ input{
 	height: 80px;
 	border-radius: 10px;
 	transition: 0.3s ease 0s;
-
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: bold;
 	font-size: 22px;
-	line-height: 33px;
 	text-align: center;
 }
-.Tabs-buttons__items button:last-child{
-	margin-left: 20px;
-}
-.Tabs-buttons__items button:hover{
-	background: var(--tabs-hov);
-}
+.Tabs-buttons__items button:last-child{margin-left: 20px;}
+.Tabs-buttons__items button:hover{background: var(--tabs-hov);}
 /** id, which is added in main.js*/
 #Tabs-btn{background: var(--tabs-hov);}
 #hidden{display: none;}
@@ -252,9 +220,7 @@ input{
 	border-radius: 15px;
 	position: relative;
 }
-.cart-img:nth-child(2n){
-	margin-right: 0;
-}
+.cart-img:nth-child(2n){margin-right: 0;}
 .cart-img__img{
 	border-radius: 15px;
 	position: absolute;
@@ -267,16 +233,12 @@ input{
 	background: #E5CB6AFF;
 	filter: opacity(90%);
 }
-.mask-grey_portf{
-	filter: grayscale(1);
-}
 .cart-img:hover .mask-skills{
 	background: #B2ADA5;
 	filter: opacity(80%);
 }
-.cart-img:hover .cart-img__img{
-	filter: grayscale(0);
-}
+.mask-grey_portf{filter: grayscale(1);}
+.cart-img:hover .cart-img__img{filter: grayscale(0);}
 .mask-text__item{
 	display: flex;
 	flex-direction: column;
@@ -305,9 +267,5 @@ input{
 	justify-content: center;
 	align-items: center;
 }
-.mask-text__link:hover{
-	background: #E6E0D4;
-}
-.mask-text__link:active{
-	background: #fff;
-}
+.mask-text__link:hover{background: #E6E0D4;}
+.mask-text__link:active{background: #fff;}
