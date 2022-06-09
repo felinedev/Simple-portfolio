@@ -1,14 +1,33 @@
 body{
 	--bg-color: #0C151D;
+	--btn-bg: #171F26;
+	--btn-hov: #1E2932;
+	--btn-color: #A3ABB2;
+	--color-h1: #F1F2F4;
+	--color-h3: #A3ABB2;
+	--fact-h1: #A3ABB2;
+	--fact-h3: #A3ABB2;
+	--tabs-hov: #0C151D;
+	--tabs-bg: #171F26;
 }
 body.light{
-	--bg-color: gray;
+	--bg-color: #E9EBEC;
+	--btn-bg: #ffff;
+	--btn-hov: #DBDBDB;
+	--btn-color: #3D3D3D;
+	--color-h1: #3D3D3D;
+	--color-h3: #575757;
+	--fact-h1: #3A3A3A;
+	--fact-h3: #575757;
+	--tabs-hov: #D7D7D7;
+	--tabs-bg: #19191B;
 }
 body{
+	transition: 0.3s ease 0s;
 	background-color: var(--bg-color);
 	padding: 0;
 	margin: 0;
-	color: #A3ABB2;
+	color: var(--color-h3);
 	display: flex;
 	justify-content: center;
 }
@@ -22,18 +41,18 @@ header{
 	margin-bottom: 65px;
 }
 footer{
-	color: #A3ABB2;
+	color: var(--color-h3);
 	margin: 80px 0;
 
 	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 22px;
 	line-height: 33px;
 }
 /** btn toggle-them style */
 #BtnToggleTheme{
-	background-color: #171F26;
+	background-color: var(--btn-bg);
 	border-radius: 50%;
 	width: 80px;
 	height: 80px;
@@ -44,13 +63,12 @@ footer{
 	transition: 0.4s ease 0s;
 }
 #BtnToggleTheme:hover{
-	background-color: #1D2730;
+	background-color: var(--btn-hov);
 	cursor: pointer;
 }
 #BtnToggleTheme:active{
-	background-color: #171F26;
+	background-color: var(--btn-bg);
 }
-
 
 /** Profile style */
 
@@ -70,9 +88,10 @@ footer{
 	width: 207px;
 	height: 207px;
 	border-radius: 50%;
-	border: 5px solid #000000;
+	border: 5px solid var(--btn-bg);
 	display: flex;
 	align-items: center;
+	transition: 0.2s ease 0s;
 }
 .Profile-info__img___border img{
 	width: 100%;
@@ -85,22 +104,23 @@ footer{
 .Profile-info__info h1{
 	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 46px;
 	line-height: 69px;
-	color: #F1F2F4;
+	color: var(--color-h1);
 	margin: 0;
 }
 .Profile-info__info h3{
 	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 22px;
 	line-height: 33px;
-	color: #A3ABB2;
+	color: var(--color-h3);
 	margin: 0;
 }
 .Social-Network{
+	transition: none;
 	margin-top: 12px;
 }
 .Social-Network a{
@@ -111,6 +131,8 @@ footer{
 	margin-right: 0;
 }
 
+/** Porfile-facts style*/
+
 .Profile-facts{
 	margin: 48px 0;
 	display: flex;
@@ -119,23 +141,23 @@ footer{
 .Profile-facts__items{
 	text-align: center;
 }
-.Profile-facts__items h4{
+.Profile-facts__items h1{
 	margin: 0;
 	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 24px;
 	line-height: 36px;
-	color: #A3ABB2;
+	color: var(--fact-h1);
 }
-.Profile-facts__items p{
+.Profile-facts__items h3{
 	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 22px;
 	line-height: 33px;
 	text-align: center;
-	color: #A3ABB2;
+	color: var(--fact-h3);
 }
 .Profile-btn{
 	display: flex;
@@ -153,7 +175,7 @@ footer{
 
 	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 22px;
 	line-height: 33px;
 	background-color: #FFE071;
@@ -166,14 +188,15 @@ footer{
 }
 .Profile-btn button:hover{
 	background-color: #B8A252;
+	transition: none;
 }
 .Profile-btn button:last-child{
 	margin-left: 38px;
-	background-color: #171F26;
-	color: #A3ABB2;
+	background-color: var(--btn-bg);
+	color: var(--btn-color);
 }
 .Profile-btn button:last-child:hover{
-	background-color: #1E2932;
+	background-color: var(--btn-hov);
 }
 
 
@@ -182,16 +205,17 @@ input{
 	display: none;
 }
 .Tabs-buttons{
-	background-color: #171F26;
+	background-color: var(--btn-bg);
 	display: flex;
 	justify-content: center;
 	padding: 18px 24px;
 	border-radius: 20px;
+	transition: 0.3s;
 }
 .Tabs-buttons__items button{
 	border: none;
 	background: none;
-	color: #A3ABB2;
+	color: var(--btn-color);
 	width: 350px;
 	height: 80px;
 	border-radius: 10px;
@@ -199,7 +223,7 @@ input{
 
 	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 22px;
 	line-height: 33px;
 	text-align: center;
@@ -208,10 +232,10 @@ input{
 	margin-left: 20px;
 }
 .Tabs-buttons__items button:hover{
-	background: #0C151D;
+	background: var(--tabs-hov);
 }
 /** id, which is added in main.js*/
-#Tabs-btn{background: #0C151D;}
+#Tabs-btn{background: var(--tabs-hov);}
 #hidden{display: none;}
 
 .Tabs-content>div{
@@ -227,13 +251,11 @@ input{
 	margin-right: 32px;
 	border-radius: 15px;
 	position: relative;
-
 }
 .cart-img:nth-child(2n){
 	margin-right: 0;
 }
 .cart-img__img{
-	
 	border-radius: 15px;
 	position: absolute;
 }

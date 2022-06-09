@@ -8,15 +8,27 @@ let SkillsBlock = document.getElementById('skills');
 //declaration BtnToggleTheme & ChangeImg
 const BtnToggleTheme = document.getElementById('BtnToggleTheme');
 const ChangeImg = document.getElementById('ChangeImg');
-
+//Social-Network image
+const img1 = document.getElementById('SocialNet1');
+const img2 = document.getElementById('SocialNet2');
+const img3 = document.getElementById('SocialNet3');
+const img4 = document.getElementById('SocialNet4');
 function setLightTheme() {
 	document.body.classList.add('light');
 	ChangeImg.src = 'img/lightTheme.png';
+	img1.src = 'img/light-network/github.png';
+	img2.src = 'img/light-network/linkedin.png';
+	img3.src = 'img/light-network/twitter.png';
+	img4.src = 'img/light-network/youtube.png';
 	localStorage.theme = 'light';
 }
 function setDarkTheme() {
 	document.body.classList.remove('light');
 	ChangeImg.src = 'img/darkTheme.png';
+	img1.src = 'img/dark-network/github.png';
+	img2.src = 'img/dark-network/linkedin.png';
+	img3.src = 'img/dark-network/twitter.png';
+	img4.src = 'img/dark-network/youtube.png';
 	localStorage.theme = 'dark';
 }
 function ToggleTheme() {
