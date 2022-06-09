@@ -5,6 +5,27 @@ let Rinput = document.getElementById('input-r');
 //declaration PortfolioBlock & SkillsBlock
 let PortfolioBlock = document.getElementById('portfolio');
 let SkillsBlock = document.getElementById('skills');
+//declaration BtnToggleTheme & ChangeImg
+const BtnToggleTheme = document.getElementById('BtnToggleTheme');
+const ChangeImg = document.getElementById('ChangeImg');
+
+function setLightTheme() {
+	document.body.classList.add('light');
+	ChangeImg.src = 'img/lightTheme.png';
+	localStorage.theme = 'light';
+}
+function setDarkTheme() {
+	document.body.classList.remove('light');
+	ChangeImg.src = 'img/darkTheme.png';
+	localStorage.theme = 'dark';
+}
+function ToggleTheme() {
+	
+		if (document.body.classList.contains('light')) setDarkTheme()
+		else setLightTheme()
+	
+}
+if (localStorage.theme == 'light') setLightTheme()
 
 function btn_l(){		//Function btn-l this is the Portfolio-block(show)
 	Linput.checked = true;
