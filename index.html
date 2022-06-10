@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="CSS/style.css">
-
+	<!------------>
 	<!--Сonnecting Fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-
-
 	<title>Simple-portfolio</title>
 	<script src="JS/main.js" defer></script>
 </head>
-
 <body>
 	<div class="wrap">
 		<header>
-			<button class="Btn-Change_theme">
-				<div>
-					<img src="img/Btn-Change_theme.png">
-				</div>
+			<button id="BtnToggleTheme" onclick="ToggleTheme()">
+				<div><img src="img/darkTheme.png" id="ChangeImg"></div>
 			</button>
 		</header>
-
 		<main>
 			<div class="Profile">
 				<div class="Profile-info">
 					<div class="Profile-info__img">
-						<div class="Profile-info__img___border">
-							<img src="img/Profile-img.png">
-						</div>
+						<div class="Profile-info__img___border"><img src="img/Profile-img.png"></div>
 					</div>
 					<div class="Profile-info__info">
 						<h1>Victor Alvarado</h1>
 						<h3>Software Engineer</h3>
 						<div class="Social-Network">
-							<a href="#">
-								<img src="img/github.png"></img>
-							</a>
-							<a href="#">
-								<img src="img/twitter.png"></img>
-							</a>
-							<a href="#">
-								<img src="img/linkedin.png"></img>
-							</a>
-							<a href="#">
-								<img src="img/youtube.png"></img>
-							</a>
+							<a href="#"><img id="SocialNet1" src="img/dark-network/github.png"></img></a>
+							<a href="#"><img id="SocialNet2" src="img/dark-network/twitter.png"></img></a>
+							<a href="#"><img id="SocialNet3" src="img/dark-network/linkedin.png"></img></a>
+							<a href="#"><img id="SocialNet4" src="img/dark-network/youtube.png"></img></a>
 						</div>
 					</div>
 				</div>
 				<div class="Profile-facts">
 					<div class="Profile-facts__items">
-						<h4>7</h4>
-						<p>Years of work <br> experience</p>
+						<h1>7</h4>
+						<h3>Years of work <br> experience</h3>
 					</div>
 					<div class="Profile-facts__items">
-						<h4>50+</h4>
-						<p>Completed <br> projects</p>
+						<h1>50+</h1>
+						<h3>Completed <br> projects</h3>
 					</div>
 					<div class="Profile-facts__items">
-						<h4>20+</h4>
-						<p>Satisfied <br> customers</p>
+						<h1>20+</h1>
+						<h3>Satisfied <br> customers</h3>
 					</div>
 				</div>
 				<div class="Profile-btn">
@@ -73,7 +56,6 @@
 					<button><b>Contact me</b></button>
 				</div>
 			</div>
-
 			<div class="Tabs">
 				<div class="Tabs-buttons">
 					<div class="Tabs-buttons__items">
@@ -85,20 +67,15 @@
 						<button onclick="btn_r()" id="btn-r">Skills</button>
 					</div>
 				</div>
-
 				<div class="Tabs-content">
-
 					<div class="Tabs-content__portfolio" id="portfolio">
 						<div class="cart-img">
 							<img class="cart-img__img mask-grey_portf" src="img/portfolio-carts/cart1.png">
 							<div class="mask-text mask-portfolio">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -107,11 +84,8 @@
 							<div class="mask-text mask-portfolio">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -120,11 +94,8 @@
 							<div class="mask-text mask-portfolio">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -133,11 +104,8 @@
 							<div class="mask-text mask-portfolio">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -146,11 +114,8 @@
 							<div class="mask-text mask-portfolio">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -159,27 +124,20 @@
 							<div class="mask-text mask-portfolio">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
 					</div>
-
 					<div class="Tabs-content__skills" id="skills">
 						<div class="cart-img">
 							<img class="cart-img__img" src="img/skills-carts/cart1.png">
 							<div class="mask-text mask-skills">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -188,11 +146,8 @@
 							<div class="mask-text mask-skills">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -201,11 +156,8 @@
 							<div class="mask-text mask-skills">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -214,11 +166,8 @@
 							<div class="mask-text mask-skills">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -227,11 +176,8 @@
 							<div class="mask-text mask-skills">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -240,11 +186,8 @@
 							<div class="mask-text mask-skills">
 								<div class="mask-text__item">
 									<h1>SmarterTrading411</h1>
-									<p>Landing page of SmarterTrading411 created
-										using wordPress</p>
-										<a class="mask-text__link" href="#">
-											<img src="img/Link.png">
-										</a>
+									<p>Landing page of SmarterTrading411 created using wordPress</p>
+									<a class="mask-text__link" href="#"><img src="img/Link.png"></a>
 								</div>
 							</div>
 						</div>
@@ -257,5 +200,4 @@
 		</footer>
 	</div>
 </body>
-
 </html>
