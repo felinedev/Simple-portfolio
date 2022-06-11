@@ -245,13 +245,13 @@ input{display: none;}
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	padding: 37px;
+	padding: 31px;
 	color: #3D3D3D;
 }
 .mask-text__item h1{
 	margin: 0px;
 	font-size: 22px;
-	margin-top: 30px;
+	font-weight: bold;
 }
 .mask-text__item p{
 	margin-top: 10px;
