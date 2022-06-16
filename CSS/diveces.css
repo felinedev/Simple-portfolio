@@ -1,0 +1,19 @@
+@media (min-width: 800px){
+	/*Todo: Desktop(1500px-800px) */
+	.Profile-info__info h1{
+		font-size: 2.9rem;
+	}
+}
+@media (max-width: 800px){
+		/*Todo: Tablet(800px-450px) */
+	.Profile-info__info h1{
+		font-size: 1.5rem;	
+	}
+}
+@media (max-width: 450px){
+	/* style for mobail deveces (w-768px + w-768>px */
+		/*Todo: Mobail(450px-320px) */
+	.Profile-info__info h1{
+		font-size: 4rem;
+	}
+}
