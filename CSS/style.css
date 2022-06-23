@@ -1,5 +1,3 @@
-@import url(castomStyles.css) print;
-
 html{font-size: 16px;}
 body{
 	transition: 0.3s ease 0s;
@@ -7,8 +5,6 @@ body{
 	padding: 0;
 	margin: 0;
 	color: var(--color-h3);
-	display: flex;
-	justify-content: center;
 
 	font-family: 'Poppins';
 	font-style: normal;
@@ -18,7 +14,7 @@ body{
 .wrap{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 }
 header{
 	margin-top: 33px;
@@ -30,17 +26,19 @@ footer{
 	font-size: 22px;
 }
 main{width: 757px;}
+
 /** btn toggle-them style */
 #BtnToggleTheme{
 	background-color: var(--btn-bg);
 	border-radius: 50%;
 	width: 80px;
 	height: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	border: none;
 	transition: 0.4s ease 0s;
+	padding: 20px;
+}
+.BtnToggleTheme_img{
+	width: 100%;
 }
 #BtnToggleTheme:hover{
 	background-color: var(--btn-hov);
@@ -54,6 +52,7 @@ main{width: 757px;}
 
 .Profile-info{
 	display: flex;
+	justify-content: center;
 }
 .Profile-info__img{
 	width: 215px;
@@ -114,12 +113,12 @@ main{width: 757px;}
 }
 .Profile-facts__items h1{
 	margin: 0;
-	font-size: 24px;
+	font-size: 1.5rem;
 	line-height: 36px;
 	color: var(--fact-h1);
 }
 .Profile-facts__items h3{
-	font-size: 22px;
+	font-size: 1.37rem;
 	text-align: center;
 	color: var(--fact-h3);
 }
@@ -127,9 +126,6 @@ main{width: 757px;}
 	display: flex;
 	justify-content: center;
 	margin-bottom: 75px;
-}
-.Profile-btn img{
-	padding-top: 1px;
 }
 .Profile-btn button{
 	width: 290px;
@@ -144,17 +140,10 @@ main{width: 757px;}
 	align-items: center;
 	justify-content: center;
 }
-.Profile-btn button:hover{
-	background-color: #B8A252;
-	transition: none;
-}
 .Profile-btn button:last-child{
 	margin-left: 38px;
 	background-color: var(--btn-bg);
 	color: var(--btn-color);
-}
-.Profile-btn button:last-child:hover{
-	background-color: var(--btn-hov);
 }
 
 /** Tabs style */
@@ -178,50 +167,73 @@ input{display: none;}
 	font-size: 22px;
 	text-align: center;
 }
-.Tabs-buttons__items button:last-child{margin-left: 20px;}
 .Tabs-buttons__items button:hover{background: var(--tabs-hov);}
-/** id, which is added in main.js*/
+
+/* id, which is added in main.js*/
 #Tabs-btn{background: var(--tabs-hov);}
 #hidden{display: none;}
-.Tabs-content>div{
+
+/** cart style */
+.Tabs-content-portfolio, .Tabs-content-skills{
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 65px;
+	margin-top: 65px;/* in devise >500px*/
 }
+.cart-img__inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;}
+.cart-img__inner::before{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	opacity: 0;
+	content: '';
+	z-index: 1;
+	transition: 0.4s;
+}
+.mask-portfolio::before{background: rgba(255,224,113, 0.88);}
+.mask-skills::before{background-color: rgba(178,173,165, 0.8);}
+.cart-img__inner:hover::before{opacity: 1;}
 .cart-img{
 	width: 362px;
 	height: 226px;
 	margin-bottom: 48px;
 	margin-right: 32px;
 	border-radius: 15px;
-	position: relative;
 }
-.cart-img:nth-child(2n){margin: 0;}
 .cart-img__img{
-	border-radius: 15px;
-	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* object-fit: cover; */
 }
+/*for portfolio-cart*/
+.mask-portfolio__img{filter: grayscale(1); transition: 0.4s;}
+.cart-img:hover .mask-portfolio__img{filter: grayscale(0);}
+/* mask for hover-text */
 .mask-text{
 	display: block;
-	border-radius: 15px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 2;
+	transition: 0.4s;
 }
-.cart-img:hover .mask-portfolio{
-	background: #E5CB6AFF;
-	filter: opacity(90%);
-}
-.cart-img:hover .mask-skills{
-	background: #B2ADA5;
-	filter: opacity(80%);
-}
-.mask-grey_portf{filter: grayscale(1);}
-.cart-img:hover .cart-img__img{filter: grayscale(0);}
+.cart-img__inner:hover .mask-text{opacity: 1;}
 .mask-text__item{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	justify-content: center;
-	padding: 31px;
+	padding: 35px;
+	padding-bottom: 0;
 	color: #3D3D3D;
 }
 .mask-text__item h1{
@@ -242,8 +254,7 @@ input{display: none;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: 0.4s;
 }
 .mask-text__link:hover{background: #E6E0D4;}
 .mask-text__link:active{background: #fff;}
-
-@import url(diveces.css) print;
